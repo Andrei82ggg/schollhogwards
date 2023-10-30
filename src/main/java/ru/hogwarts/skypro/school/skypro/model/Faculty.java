@@ -1,8 +1,12 @@
 package ru.hogwarts.skypro.school.skypro.model;
 
-import java.util.Objects;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+import java.util.Objects;
+@Entity
 public class Faculty {
+    @Id
     private Long id;
     private String name;
     private String color;
